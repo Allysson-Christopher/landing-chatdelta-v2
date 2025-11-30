@@ -15,20 +15,6 @@ export default function AguardandoConfirmacaoPage() {
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [elapsedTime, setElapsedTime] = useState(0);
   const [checkoutUrl, setCheckoutUrl] = useState<string | null>(null);
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(false);
-
-  // Detectar preferência de movimento reduzido
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
-    setPrefersReducedMotion(mediaQuery.matches);
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setPrefersReducedMotion(e.matches);
-    };
-
-    mediaQuery.addEventListener('change', handleChange);
-    return () => mediaQuery.removeEventListener('change', handleChange);
-  }, []);
 
   useEffect(() => {
     // Buscar subscription ID e checkout URL do localStorage
@@ -163,18 +149,6 @@ export default function AguardandoConfirmacaoPage() {
     <div className="min-h-screen bg-bg-base relative overflow-hidden flex flex-col">
       {/* Background Gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary-500/5 via-transparent to-accent/5 pointer-events-none" />
-      <motion.div
-        className="absolute inset-0 bg-gradient-to-r from-primary-500/5 to-accent/5"
-        animate={prefersReducedMotion ? {} : {
-          scale: [1, 1.2, 1],
-          rotate: [0, 180, 360],
-        }}
-        transition={{
-          duration: 30,
-          repeat: prefersReducedMotion ? 0 : Infinity,
-          ease: "linear",
-        }}
-      />
 
       {/* Header */}
       <header className="relative z-10 border-b border-border bg-bg-base/80 backdrop-blur-lg">
