@@ -35,9 +35,9 @@ const Hero: React.FC = () => {
             <div className="container-custom relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                     {/* Left Column: Content */}
-                    <div className="text-center lg:text-left space-y-8">
+                    <div className="text-center space-y-8">
                         <RevealOnScroll variant="fadeUp" delay={0.1} width="100%">
-                            <div className="flex justify-center lg:justify-start">
+                            <div className="flex justify-center">
                                 {HERO.badge && (
                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-400 text-sm font-medium mb-4">
                                         {HERO.badge}
@@ -53,13 +53,13 @@ const Hero: React.FC = () => {
                         </RevealOnScroll>
 
                         <RevealOnScroll variant="fadeUp" delay={0.2}>
-                            <p className="text-lg sm:text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto lg:mx-0">
+                            <p className="text-lg sm:text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto">
                                 {HERO.subheadline}
                             </p>
                         </RevealOnScroll>
 
                         <RevealOnScroll variant="fadeUp" delay={0.3}>
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                 <Button
                                     size="lg"
                                     variant="primary"
