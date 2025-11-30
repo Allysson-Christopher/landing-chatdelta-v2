@@ -52,14 +52,14 @@ const Hero: React.FC = () => {
                             </h1>
                         </RevealOnScroll>
 
-                        <RevealOnScroll variant="fadeUp" delay={0.2}>
+                        <RevealOnScroll variant="fadeUp" delay={0.2} width="100%">
                             <p className="text-lg sm:text-xl text-text-secondary leading-relaxed max-w-2xl mx-auto">
                                 {HERO.subheadline}
                             </p>
                         </RevealOnScroll>
 
-                        <RevealOnScroll variant="fadeUp" delay={0.3}>
-                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <RevealOnScroll variant="fadeUp" delay={0.3} width="100%">
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
                                 <Button
                                     size="lg"
                                     variant="primary"
