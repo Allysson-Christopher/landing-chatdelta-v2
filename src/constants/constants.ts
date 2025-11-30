@@ -209,8 +209,8 @@ export const PRICING = {
             cta: "Assinar Básico",
             highlighted: false,
             pricing: {
-                monthly: { price: 2.00, planType: "basic" as const, label: "Mensal" },
-                biannual: { price: 2.00, planType: "basic_biannual" as const, label: "Semestral", savings: 0, savingsPercent: 0 },
+                monthly: { price: 29.00, planType: "basic" as const, label: "Mensal" },
+                biannual: { price: 145.00, planType: "basic_biannual" as const, label: "Semestral", savings: 29, savingsPercent: 17 },
             },
         },
         {
@@ -228,8 +228,8 @@ export const PRICING = {
             cta: "Assinar Profissional",
             highlighted: true,
             pricing: {
-                monthly: { price: 2.00, planType: "professional" as const, label: "Mensal" },
-                biannual: { price: 2.00, planType: "professional_biannual" as const, label: "Semestral", savings: 0, savingsPercent: 0 },
+                monthly: { price: 49.00, planType: "professional" as const, label: "Mensal" },
+                biannual: { price: 245.00, planType: "professional_biannual" as const, label: "Semestral", savings: 49, savingsPercent: 17 },
             },
         },
         {
