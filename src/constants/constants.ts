@@ -1,0 +1,359 @@
+// URLs e Links
+export const LINKS = {
+    ctaUrl: process.env.NEXT_PUBLIC_CTA_URL || "/cadastro",
+    whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "",
+    supportEmail: process.env.NEXT_PUBLIC_SUPPORT_EMAIL || "chatdelta.atendimento@gmail.com",
+    termsOfUse: "/termos-de-uso",
+    privacyPolicy: "/politica-de-privacidade",
+    contact: "/contato",
+};
+
+// Navegação do Header
+export const NAVIGATION = [
+    { name: "Início", href: "#hero" },
+    { name: "Segurança", href: "#seguranca" },
+    { name: "Como Funciona", href: "#como-funciona" },
+    { name: "Planos", href: "#planos" },
+    { name: "FAQ", href: "#faq" },
+];
+
+// Hero Section
+export const HERO = {
+    headline: "Documentos Policiais em Menos de 10 Minutos",
+    subheadline:
+        "O Chat Delta é o assistente de inteligência artificial que gera relatórios finais de inquérito e representações com precisão e agilidade direto no WhatsApp",
+    ctaPrimary: "Começar Gratuitamente",
+    ctaSecondary: "Ver Como Funciona",
+    badge: "",
+};
+
+// Social Proof
+export const SOCIAL_PROOF = {
+    title: "Já confiado por delegados em todo Brasil",
+    // Adicione logos/badges quando disponível
+};
+
+// Benefícios
+export const BENEFITS = {
+    title: "Por que delegados escolhem o Chat Delta?",
+    items: [
+        {
+            icon: "Zap",
+            title: "Agilidade Extrema",
+            description:
+                "Emita relatório final de inquérito policial e representação em menos de 10 minutos",
+        },
+        {
+            icon: "ShieldCheck",
+            title: "Redução de Erros",
+            description:
+                "Documentos padronizados e revisados automaticamente, minimizando inconsistências",
+        },
+        {
+            icon: "FolderOpen",
+            title: "Tudo em Um Lugar",
+            description:
+                "Chega de procurar onde está aquele modelo de relatório. Acesse todos os documentos na palma da mão",
+        },
+    ],
+};
+
+// Segurança e Privacidade
+export const SECURITY = {
+    title: "Segurança de Nível Corporativo para Dados Sensíveis",
+    subtitle: "Desenvolvido especificamente para lidar com informações sigilosas de inquéritos policiais com máxima proteção e conformidade legal",
+
+    warning: {
+        title: "Por que não usar ChatGPT e outras IAs públicas?",
+        points: [
+            "Seus dados podem ser usados para treinar modelos de IA e ficarem acessíveis a outros usuários",
+            "ChatGPT gratuito e Plus retém conversas indefinidamente, mesmo após exclusão manual",
+            "Dados sensíveis aparecem em 11% das entradas de funcionários em IAs públicas",
+            "Não conformidade com LGPD e GDPR devido à retenção indefinida de dados",
+            "Ordem judicial de maio de 2025 força OpenAI a preservar dados de usuários indefinidamente",
+        ],
+    },
+
+    enterprise: {
+        title: "Infraestrutura Enterprise de Ponta",
+        description: "Chat Delta utiliza exclusivamente plataformas de IA corporativas com as mais rigorosas certificações de segurança e privacidade do mercado",
+        platforms: [
+            {
+                name: "Amazon Bedrock",
+                provider: "AWS",
+                icon: "Cloud",
+                description: "Plataforma de IA generativa da Amazon Web Services com segurança de nível governamental",
+                features: [
+                    "Dados nunca usados para treinar modelos",
+                    "Criptografia em trânsito e em repouso",
+                    "Certificações: HIPAA, SOC, ISO 27001, FedRAMP",
+                    "Sem logs de prompts e respostas",
+                    "Conformidade total com LGPD e GDPR",
+                ],
+            },
+            {
+                name: "Vertex AI",
+                provider: "Google Cloud",
+                icon: "CloudCog",
+                description: "Plataforma enterprise do Google Cloud com proteção de dados de nível corporativo",
+                features: [
+                    "Zero retenção de dados do cliente",
+                    "Primeira IA com compromisso público de privacidade ML/AI",
+                    "Certificações: ISO 27001, SOC 2/3, PCI DSS",
+                    "Dados isolados por projeto com TTL de 24h",
+                    "Proteção contra vazamento de dados sensíveis",
+                ],
+            },
+        ],
+    },
+
+    guarantees: {
+        title: "Nossas Garantias de Segurança",
+        items: [
+            {
+                icon: "Lock",
+                title: "Criptografia Total",
+                description: "Dados protegidos com criptografia AES-256 em trânsito e em repouso",
+            },
+            {
+                icon: "UserX",
+                title: "Zero Treinamento",
+                description: "Seus dados jamais são utilizados para treinar modelos de IA",
+            },
+            {
+                icon: "ShieldCheck",
+                title: "Conformidade Legal",
+                description: "100% compatível com LGPD, GDPR e legislação brasileira",
+            },
+            {
+                icon: "Trash2",
+                title: "Exclusão Real",
+                description: "Dados removidos permanentemente quando solicitado",
+            },
+        ],
+    },
+
+    compliance: {
+        title: "Certificações e Conformidade",
+        standards: [
+            "LGPD (Lei Geral de Proteção de Dados)",
+            "ISO 27001",
+            "SOC 2 Type II",
+            "HIPAA Eligible",
+            "GDPR Compliant",
+        ],
+    },
+};
+
+// Como Funciona
+export const HOW_IT_WORKS = {
+    title: "Simples como uma conversa no WhatsApp",
+    steps: [
+        {
+            number: 1,
+            icon: "MessageCircle",
+            title: "Inicie o Chat",
+            description: "Adicione o número do Chat Delta no WhatsApp",
+        },
+        {
+            number: 2,
+            icon: "FileText",
+            title: "Escolha o Documento",
+            description: "Selecione o tipo de documento que precisa",
+        },
+        {
+            number: 3,
+            icon: "MessageSquare",
+            title: "Forneça as Informações",
+            description: "Responda às perguntas do assistente",
+        },
+        {
+            number: 4,
+            icon: "CheckCircle",
+            title: "Receba Pronto",
+            description: "Documento gerado e formatado em minutos",
+        },
+    ],
+};
+
+// Planos
+export const PRICING = {
+    title: "Escolha o Plano Ideal para Sua Rotina",
+    plans: [
+        {
+            name: "Plano Gratuito",
+            type: "free" as const,
+            description: "Experimente sem compromisso",
+            features: [
+                "Até 5 documentos por mês",
+                "Todos os tipos de documentos",
+                "Sem necessidade de cartão",
+                "Suporte básico",
+            ],
+            cta: "Começar Grátis",
+            highlighted: false,
+            pricing: {
+                monthly: { price: 0, planType: "free" as const },
+            },
+        },
+        {
+            name: "Plano Básico",
+            type: "basic" as const,
+            description: "Ideal para demandas moderadas",
+            features: [
+                "Até 15 documentos por mês",
+                "Todos os tipos de documentos",
+                "Suporte por e-mail",
+                "Atualizações automáticas",
+                "Cancele quando quiser",
+            ],
+            cta: "Assinar Básico",
+            highlighted: false,
+            pricing: {
+                monthly: { price: 29, planType: "basic" as const, label: "Mensal" },
+                biannual: { price: 24, planType: "basic_biannual" as const, label: "Semestral", savings: 30, savingsPercent: 17 },
+            },
+        },
+        {
+            name: "Plano Profissional",
+            type: "professional" as const,
+            description: "Para alta demanda de documentos",
+            badge: "Mais Popular",
+            features: [
+                "Até 100 documentos por mês",
+                "Todos os tipos de documentos",
+                "Suporte prioritário",
+                "Atualizações automáticas",
+                "Cancele quando quiser",
+            ],
+            cta: "Assinar Profissional",
+            highlighted: true,
+            pricing: {
+                monthly: { price: 49, planType: "professional" as const, label: "Mensal" },
+                biannual: { price: 39, planType: "professional_biannual" as const, label: "Semestral", savings: 60, savingsPercent: 20 },
+            },
+        },
+        {
+            name: "Plano Enterprise",
+            type: "enterprise" as const,
+            description: "Soluções personalizadas para equipes e órgãos públicos",
+            badge: "Sob Medida",
+            features: [
+                "Documentos ilimitados",
+                "Servidor dedicado exclusivo",
+                "Customização de templates",
+                "Integração com sistemas internos",
+                "Suporte técnico 24/7",
+                "Treinamento para equipe",
+            ],
+            cta: "Fale Conosco",
+            highlighted: false,
+            isEnterprise: true,
+            pricing: {
+                monthly: { price: null, planType: null },
+            },
+        },
+    ],
+};
+
+// FAQ
+export const FAQ = {
+    title: "Dúvidas Frequentes",
+    items: [
+        {
+            question: "Como funciona o plano gratuito?",
+            answer:
+                "O plano gratuito permite que você gere até 5 documentos por mês, sem limite de tempo. Se precisar gerar mais documentos, pode fazer upgrade para um plano pago a qualquer momento.",
+        },
+        {
+            question: "Preciso informar cartão de crédito para usar o plano gratuito?",
+            answer:
+                "Não! O plano gratuito não requer cartão de crédito. Você só precisará cadastrar uma forma de pagamento se decidir fazer upgrade para um plano pago.",
+        },
+        {
+            question: "Quais tipos de documentos posso gerar?",
+            answer:
+                "Você pode gerar Relatórios Finais de Inquérito Policial, Representações por Prisão Preventiva, Representações por Prisão Temporária, e diversos outros documentos essenciais para a rotina policial. Novos documentos são adicionados regularmente.",
+        },
+        {
+            question: "Os dados são seguros?",
+            answer:
+                "Sim! Utilizamos criptografia de ponta a ponta e seguimos as melhores práticas de segurança da informação. Seus dados e documentos são protegidos e jamais são compartilhados com terceiros.",
+        },
+        {
+            question: "Posso cancelar a qualquer momento?",
+            answer:
+                "Sim, você pode cancelar sua assinatura a qualquer momento, sem multas ou taxas de cancelamento. O acesso permanecerá ativo até o final do período já pago.",
+        },
+        {
+            question: "Como funciona o suporte?",
+            answer:
+                "O Plano Profissional oferece suporte por e-mail com resposta em até 24 horas úteis. O Plano Premium inclui suporte prioritário com resposta em até 4 horas úteis e acesso a consultoria especializada.",
+        },
+        {
+            question: "O que muda entre os planos?",
+            answer:
+                "Todos os planos têm acesso aos principais documentos. O Plano Profissional é ideal para uso diário com documentos ilimitados. O Premium adiciona modelos personalizados, suporte prioritário e acesso antecipado a novos recursos.",
+        },
+    ],
+};
+
+// CTA Final
+export const CTA_FINAL = {
+    headline: "Pronto para Economizar Horas na Elaboração de Documentos?",
+    subtext: "Comece gratuitamente agora. Sem cartão de crédito.",
+    cta: "Começar Gratuitamente",
+};
+
+// Footer
+export const FOOTER = {
+    logo: {
+        alt: "Chat Delta Logo",
+        src: "/assets/logo-delta-chat-new.svg",
+    },
+    links: [
+        { name: "Termos de Uso", href: LINKS.termsOfUse },
+        { name: "Política de Privacidade", href: LINKS.privacyPolicy },
+        { name: "Contato", href: LINKS.contact },
+    ],
+    copyright: `© ${new Date().getFullYear()} Chat Delta. Todos os direitos reservados.`,
+};
+
+// Testimonials
+export const TESTIMONIALS = {
+    title: "O que delegados estão dizendo",
+    items: [
+        {
+            name: "Thiago Barros",
+            role: "Delegado de Polícia",
+            location: "Saloá, PE",
+            testimonial: "Aproveitem todas as peças que o sistema disponibiliza! Para vocês terem uma ideia de como o Chat Delta agiliza os procedimentos policiais, em um flagrante eu usei o chat para gerar o despacho de ratificação de flagrante e, assim que o procedimento foi concluído, já gerei o relatório conclusivo do inquérito policial. Simplesmente, muito bom!!",
+            avatar: "/images/testimonials/thiago-barros.png",
+            rating: 5,
+        },
+        {
+            name: "José Maranduba",
+            role: "Delegado de Polícia",
+            location: "Belo Jardim, PE",
+            testimonial: "O sistema é fantástico. Não dá pra mensurar o tempo economizado e que pode ser empenhado em outras tarefas. Consegui gerar 10 relatórios conclusivos de inquérito policial em apenas duas horas. Indico a todos.",
+            avatar: "/images/testimonials/jose-maranduba.png",
+            rating: 5,
+        },
+        {
+            name: "Márcio Ribeiro",
+            role: "Delegado de Polícia",
+            location: "Santa Cruz do Capibaribe, PE",
+            testimonial: "O Chat Delta já faz parte do dia a dia da delegacia. É como se tivéssemos um assessor disponível 24 horas por dia, sempre pronto para ajudar na elaboração dos documentos.",
+            avatar: "/images/testimonials/marcio-ribeiro.png",
+            rating: 5,
+        },
+        {
+            name: "Frederico Marcelo",
+            role: "Delegado de Polícia",
+            location: "Caruaru, PE",
+            testimonial: "A inteligência artificial aplicada ao trabalho policial é o futuro, e o Chat Delta prova isso. A ferramenta não apenas acelera o processo de elaboração de documentos, mas também garante consistência e qualidade técnica. Recomendo a todos os colegas delegados.",
+            avatar: "/images/testimonials/frederico-marcelo.png",
+            rating: 5,
+        },
+    ],
+};
