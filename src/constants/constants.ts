@@ -11,7 +11,6 @@ export const LINKS = {
 // Navegação do Header
 export const NAVIGATION = [
     { name: "Início", href: "#hero" },
-    { name: "Segurança", href: "#seguranca" },
     { name: "Como Funciona", href: "#como-funciona" },
     { name: "Planos", href: "#planos" },
     { name: "FAQ", href: "#faq" },

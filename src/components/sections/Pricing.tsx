@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import { Section, cn } from "@/components/ui";
+import { Section } from "@/components/ui";
 import RevealOnScroll from "@/components/animations/RevealOnScroll";
 import PricingCard from "@/components/pricing/PricingCard";
 import { PRICING, LINKS } from "@/constants/constants";
 
 const Pricing: React.FC = () => {
-    const [billingCycle, setBillingCycle] = useState<"monthly" | "biannual">("monthly");
+    const billingCycle = "monthly" as const;
     const [showFreeSignupModal, setShowFreeSignupModal] = useState(false);
     const [formData, setFormData] = useState({ name: "", email: "", phone: "" });
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -54,30 +54,6 @@ const Pricing: React.FC = () => {
                         <p className="text-text-secondary text-lg max-w-2xl mx-auto mb-8">
                             Escolha o plano que melhor se adapta à sua necessidade.
                         </p>
-
-                        {/* Billing Toggle */}
-                        <div className="flex items-center justify-center gap-4 mb-8">
-                            <span className={cn("text-sm font-medium transition-colors", billingCycle === "monthly" ? "text-white" : "text-text-tertiary")}>
-                                Mensal
-                            </span>
-                            <button
-                                onClick={() => setBillingCycle(prev => prev === "monthly" ? "biannual" : "monthly")}
-                                className="relative w-14 h-7 bg-white/10 rounded-full p-1 transition-colors hover:bg-white/20 focus:outline-none"
-                            >
-                                <div
-                                    className={cn(
-                                        "w-5 h-5 bg-primary-500 rounded-full shadow-md transform transition-transform duration-300",
-                                        billingCycle === "biannual" ? "translate-x-7" : "translate-x-0"
-                                    )}
-                                />
-                            </button>
-                            <span className={cn("text-sm font-medium transition-colors flex items-center gap-2", billingCycle === "biannual" ? "text-white" : "text-text-tertiary")}>
-                                Semestral
-                                <span className="text-[10px] font-bold bg-accent/20 text-accent px-2 py-0.5 rounded-full">
-                                    ECONOMIZE
-                                </span>
-                            </span>
-                        </div>
                     </RevealOnScroll>
                 </div>
 
